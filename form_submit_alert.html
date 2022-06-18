@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="submit.css">
+    <title>Submit</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="popup" class="hide">
+            <div id="cancel" onclick="remove()"><img src="cross.png" id="cross"></div>
+            <div id="alert_box">
+                <img src="done.png" class="x" id="done">
+                <div id="fetch_name" class="x"></div>
+                <span id="description" class="x">Your Form Will Be Submitted!</span>
+            </div>
+
+        </div>
+
+
+        <div id="signup" class="flex">
+            <div id="h1">SignUp Now</div>
+            <input type="text" class="form_input" id="f_name" placeholder="Enter Your First Name" required>
+            <input type="text" class="form_input" id="l_name" placeholder="Enter Your Last Name" required>
+            <input type="email" class="form_input" id="email" placeholder="Enter Your Email Id" required>
+            <input type="password" class="form_input" id="password" placeholder="Enter A Strong Password" required>
+            <div id="button">
+                <button id="signup_button" class="btn" onclick="submit()">SignUp Now</button>
+                <input type="reset" id="reset" class="btn" onclick="reset()" name="Reset">
+            </div>
+            <a href="###">
+                <span id="login">Already have an account</span>
+            </a>
+
+        </div>
+    </div>
+    <script src="submit_function.js"></script>
+</body>
+
+</html>
